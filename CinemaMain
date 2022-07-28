@@ -1,0 +1,44 @@
+//Alunas: Alanna Keila Jesus Lopes e Sarah Araújo Pimentel de Sousa.
+
+public class CinemaMain {
+    public static void main(String [] args){
+
+        Sessão s1 = new Sessão(1);
+        s1.setCapacidade(160);
+        s1.setValorIngresso(28.00F);
+        s1.setHorário("14h");
+
+        System.out.println();
+
+        Sessão s2 = new Sessão(2);
+        s2.setCapacidade(200);
+        s2.setValorIngresso(32.00F);
+        s2.setHorário("20h") ;
+
+        System.out.println();
+
+       Filme f1 = new Filme("Divertidamente");
+       f1.setDuração("1h35m");
+       f1.setGenero("Comédia/Infantil");
+       f1.setDiretor("Pete Docter");
+       f1.setSessão(s1);
+       f1.visãoGeral();
+
+        System.out.println();
+
+        s1.informacoes();
+
+        System.out.println();
+
+       Filme f2 = new Filme("Divergente");
+       f2.setDuração("2h19m");
+       f2.setGenero("Ficção Científica/Ação");
+       f2.setDiretor("Neil Burger");
+       f2.setSessão(s2);
+       f2.visãoGeral();
+
+        System.out.println();
+
+        s2.informacoes();
+    }
+}
