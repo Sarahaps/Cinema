@@ -1,0 +1,45 @@
+public class Sessão {
+    private int capacidade;
+    private String horário;
+    private float ValorIngresso;
+    private int numeroSessao;
+
+    public int getCapacidade() {
+        return capacidade;
+    }
+
+    public void setCapacidade(int capacidade) {
+        this.capacidade = capacidade;
+    }
+
+    public String getHorário() {
+        return horário;
+    }
+
+    public void setHorário(String horário) {
+        this.horário = horário;
+    }
+
+    public float getValorIngresso() {
+        return ValorIngresso;
+    }
+
+    public void setValorIngresso(float valorIngresso) {
+        ValorIngresso = valorIngresso;
+    }
+
+    public int getNumeroSessao() {
+        return numeroSessao;
+    }
+
+    public void setNumeroSessao(int numeroSessao) {
+        this.numeroSessao = numeroSessao;
+    }
+
+    public Sessão(int numeroSessao){
+        this.numeroSessao = numeroSessao;
+    }
+    public void informacoes(){
+    System.out.println("Detalhes da sessão: " + "\n" + "Capacidade: " + this.getCapacidade() + "\n" + "Horário da sessão: " + this.getHorário() + "\n" + "Valor do ingresso: " + this.getValorIngresso() + "\n" + "Número da sessão: " + this.getNumeroSessao());
+    }
+}
