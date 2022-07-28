@@ -1,0 +1,55 @@
+public class Filme {
+    private String nome;
+    private String duração;
+    private String genero;
+    private String diretor;
+    private Sessão sessão;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDuração() {
+        return duração;
+    }
+
+    public void setDuração(String duração) {
+        this.duração = duração;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getDiretor() {
+        return diretor;
+    }
+
+    public void setDiretor(String diretor) {
+        this.diretor = diretor;
+    }
+
+    public Sessão getSessão() {
+        return sessão;
+    }
+
+    public void setSessão(Sessão sessão) {
+        this.sessão = sessão;
+    }
+
+    public Filme(String nome) {
+        this.nome = nome;
+    }
+    public void visãoGeral() {
+        System.out.println("Detalhes do filme: \n" + "Título:" + this.getNome() + "\n" + "Duração: " + this.getDuração() + "\n" + "Gênero: " + this.getGenero() + "\n" + "Diretor: " + this.getDiretor() + "\n" + "Sessão: " + sessão.getNumeroSessao());
+    }
+
+}
